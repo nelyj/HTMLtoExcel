@@ -1,6 +1,6 @@
 == Create Excel from HTML table
 
-If you don't know "Scree Scrapping" and you need retrieve data from HTML table, follow the next code.
+If you don't know "Screen Scrapping" and you need retrieve data from HTML table, follow the next code.
 
 (You have to do it through terminal in MAC Os or Linux)
 
