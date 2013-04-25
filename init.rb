@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
+require 'simple_xlsx'
 
 url = "http://localhost/pasaportes.html"
 data = Nokogiri::HTML(open(url))
@@ -20,7 +21,16 @@ details = rows.collect do |row|
 	end
 	detail
 end
-puts details
+
+SimpleXlsx::Serializer.new("HTMLtoExcel.xlsx") do |document|
+ document.add_sheet("Sheet1") do |sheet|
+  sheet.add_row(["Participant Name", "Entry Name","File Name", "URL Download"])
+  details.each do |row|
+   sheet.add_row([row[:participant_name]])
+  end
+
+ end
+end
 #outFile.puts(objeto)
 #outFile.close
 
