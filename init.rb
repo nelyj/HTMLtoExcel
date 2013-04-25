@@ -31,6 +31,7 @@ SimpleXlsx::Serializer.new("HTMLtoExcel.xlsx") do |document|
 
  end
 end
+puts "Done"
 #outFile.puts(objeto)
 #outFile.close
 

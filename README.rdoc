@@ -1,0 +1,22 @@
+== Create Excel from HTML table
+
+If you don't know "Scree Scrapping" and you need retrieve data from HTML table, follow the next code.
+
+(You have to do it through terminal in MAC Os or Linux)
+
+== Requirements
+
+1. Install Ruby (http://www.ruby-lang.org/en/downloads/)
+
+2. gem install 'nokogiri' (through terminal)
+
+3. gem install 'open-uri' (through terminal)
+
+4. gem install 'simple_xlsx' (through terminal)
+
+
+== Run
+    cd HTMLToExcel/
+    ruby init.rb
+
+    Done
