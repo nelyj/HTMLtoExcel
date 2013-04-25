@@ -26,7 +26,7 @@ SimpleXlsx::Serializer.new("HTMLtoExcel.xlsx") do |document|
  document.add_sheet("Sheet1") do |sheet|
   sheet.add_row(["Participant Name", "Entry Name","File Name", "URL Download"])
   details.each do |row|
-   sheet.add_row([row[:participant_name]])
+   sheet.add_row([row[:participant_name], row[:entry_name], row[:name_file], row[:download]])
   end
 
  end
